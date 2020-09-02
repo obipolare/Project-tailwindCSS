@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header
+        class="flex flex-col justify-between h-auto bg-fixed bg-gray-800 bg-center bg-cover border-b-2 border-orange-500 shadow md:h-screen md:flex-row md:bg-your-name"
+      >
+        <div class="flex flex-col ml-3 md:flex-row">
+          <h1 class="text-4xl text-white font-itim">Obipolare</h1>
+        </div>
+        <!-- <button @click="toggleNav" class="flex btn btn-blue md:hidden">
+          Menu
+        </button> -->
+        <nav id="menu" class="">
+          <ul class="flex flex-col justify-start md:flex-row">
+            <li v-for="title in navList" class="p-5">
+              <a :href="title.url" class="font-bold text-white uppercase"
+                >{{title.name}}</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="container p-4 mx-auto bg-gray-200">
+        <sections
+          v-for="article in articles"
+          :title="article.title"
+          :paragraph="article.paragraph"
+          :description="article.description"
+          :img="article.img"
+          :key="article.id"
+        ></sections>
+        <sections
+          v-for="article in articlesTwo"
+          :title="article.title"
+          :paragraph="article.paragraph"
+          :description="article.description"
+          :img="article.img"
+          :key="article.id"
+        ></sections>
+      </main>
+    </div>
+    <script type="text/x-template" id="section-template">
+      <section class="my-5 border-b-2 border-green-700 ">
+       <article class="p-10 border-t-2 shadow-2xl" >
+         <h1 class="w-full text-xl">{{title}}</h1>
+         <p>{{paragraph}}</p>
+         <img class="w-64 mx-auto " :src="img" :alt="description">
+       </article>
+      </section>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
