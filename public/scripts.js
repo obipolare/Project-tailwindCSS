@@ -28,7 +28,7 @@ const app = new Vue({
       {
         title: "article 01",
         paragraph:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium esse temporibus tempore inventore delectus reprehenderit, ratione quaerat nihil ut quis reiciendis, veniam, aspernatur ab possimus perferendis vel odio maxime rem.",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium esse temporibus tempore inventore delectus reprehenderit, ratione quaerat nihil ut quis reiciendis, veniam, aspernatur ab possimus perferendis vel odio maxime rem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium esse temporibus tempore inventore delectus reprehenderit, ratione quaerat nihil ut quis reiciendis, veniam, aspernatur ab possimus perferendis vel odio maxime rem.",
         description: "loropechika",
         img:
           "https://i.pinimg.com/originals/30/94/e0/3094e0fd1114787639e8e334a840ca02.jpg",
