@@ -2,6 +2,9 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      colors: {
+        blackcool: "#1a1a2e",
+      },
       fontFamily: {
         itim: ["Itim", "sans-serif"],
       },

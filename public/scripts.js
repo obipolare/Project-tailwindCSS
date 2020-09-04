@@ -13,7 +13,7 @@ const app = new Vue({
       },
       {
         name: "blog",
-        url: "#",
+        url: "contact.html",
       },
       {
         name: "social media",
